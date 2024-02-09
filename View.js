@@ -33,16 +33,19 @@ class View {
         if (
           answer[`question${i + 1}`].toLowerCase() ===
           arr[i].answer.toLowerCase()
-        ) { count += 1
+        ) {
+          count += 1;
           console.log('🩷');
         } else {
           console.log('💔');
-        };
+        }
       });
     }
     console.log(`Вы ответили правильно на ${count} из ${arr.length}`);
   }
 }
+
+module.exports = View;
 
 // const arr1 = [
 //   {
