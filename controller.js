@@ -6,8 +6,7 @@ class Controller {
     const obj = await View.start();
     const path = obj.topics;
     const arrQuestionAnswer = await Model.createArr(path);
-    const result = await View.test(arrQuestionAnswer);
-    console.log(result);
+    await View.test(arrQuestionAnswer);
   }
 }
 const controllerQuiz = new Controller();

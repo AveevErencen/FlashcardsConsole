@@ -11,10 +11,10 @@ class View {
         choices: [
           {
             name: 'Ночные ястребы',
-            value: './topics/nighthawk_flashcard_data',
+            value: './topics/nighthawk_flashcard_data.txt',
           },
-          { name: 'Выдры', value: './topics/otter_flashcard_data' },
-          { name: 'Еноты', value: './topics/raccoon_flashcard_data' },
+          { name: 'Выдры', value: './topics/otter_flashcard_data.txt' },
+          { name: 'Еноты', value: './topics/raccoon_flashcard_data.txt' },
         ],
       },
     ]);
@@ -46,34 +46,3 @@ class View {
 }
 
 module.exports = View;
-
-// const arr1 = [
-//   {
-//     question: 'Что является основным источником пищи для ночных ястребов?',
-//     answer: 'насекомые',
-//   },
-//   {
-//     question: 'Верно или нет?  Ночные ястребы тесно связаны с ястребами!',
-//     answer: 'нет',
-//   },
-//   {
-//     question: 'Верно или нет?   Ночные ястребы вьют гнезда.',
-//     answer: 'нет',
-//   },
-//   {
-//     question: 'Где обыкновенные Ночные Ястребы проводят зиму?',
-//     answer: 'Южная Америка',
-//   },
-//   {
-//     question:
-//       'Верно или нет?  Бульбат - другое название обыкновенного ночного ястреба.',
-//     answer: 'верно',
-//   },
-// ];
-
-// async function run(arr) {
-//   const obj = await View.start();
-//   const path = obj.topics;
-//   const answersUser = await View.test(arr);
-// }
-// run(arr1);
